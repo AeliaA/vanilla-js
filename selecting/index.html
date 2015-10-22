@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selecting</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Getting element by tag name.</h1>
+
+	<h2>Getting element by tag name using query selector.</h2>
+
+	<p id="one">Getting element by id.</p>
+
+	<p id="two">Getting element by id using query selector.</p>
+
+	<p class="three">Getting element by class.</p>
+
+	<p class="four">Getting element by class using query selector.</p>
+	
+	<p class="five">Applying multiple css statements to an element.</p>
+	
+	<p class="six">Applying multiple css statements to an element at once.</p>
+	
+	<p class="seven">Add class.</p>
+
+	<script>
+
+		//alert('Hello world!');
+
+		//Older method
+
+		//Getting element by tag name, and changing color.
+
+		var x = document.getElementsByTagName("h1");
+		for (var i = 0; i < x.length; i++){
+		x[i].style.color="red";
+		};
+
+	</script>
+
+	<script>
+
+		//Newer methods
+
+		//IMP: Getting element by tag name using query selector.
+		
+		document.querySelector('h2').style.backgroundColor="pink";
+
+	</script>
+
+	<script>
+
+		//Getting element by id.
+
+		document.getElementById("one").style.color="red";
+
+	</script>
+
+	<script>
+
+		//IMP: Getting element by id using query selector.
+
+		document.querySelector('#two').style.backgroundColor="pink";
+
+	</script>
+
+	<script>
+
+		//Getting element by class.
+
+		var x = document.getElementsByClassName("three");
+		for (var i = 0; i < x.length; i++) {
+		x[i].style.color = "red";
+		};
+
+	</script>
+
+	<script>
+
+		//IMP: Getting element by class using query selector.
+		
+		document.querySelector('.four').style.backgroundColor = "pink";
+	
+	</script>
+
+	<script>
+
+		//Applying multiple CSS statements to an element
+
+		var el = document.querySelector('.five')
+	
+		el.style.backgroundColor = "pink";
+
+		el.style.color = "red";
+
+	</script>
+
+	<script>
+
+		//Applying multiple CSS statements to an element at once
+	
+		document.querySelector('.six').style.cssText = 'background: pink; color: red;';
+	
+	</script>
+
+	<script>
+
+		//Apply  a class
+	
+		document.querySelector('.seven').classList.add("foo");
+
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

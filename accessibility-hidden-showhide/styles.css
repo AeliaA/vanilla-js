@@ -1,0 +1,10 @@
+.logo h1 {
+	position:absolute;
+	left: -9999em;
+}
+
+
+.accessibility-hidden{
+	position:absolute;
+	left: -999em;
+}

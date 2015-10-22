@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Res Nav</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <header>
+
+      <h1>The Good Dinosaur</h1>
+
+    </header>
+    <nav class="nav-collapse">
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="explore.html">Explore</a></li>
+      </ul>
+
+    </nav>
+    <div class="wrapper">
+
+    <div class="container">
+
+        <h2>Welcome</h2>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+      </div> <!-- .container-->
+
+    </div> <!-- .wrapper-->
+
+ <script src="responsive-nav.min.js"></script>
+
+    <script>
+      var navigation = responsiveNav('.nav-collapse', {
+            transition: 400,
+            insert: 'after'
+        });
+    </script>
+</body>
+</html>

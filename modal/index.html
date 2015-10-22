@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Doc Ready</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<!-- button.show>a{Open} -->
+<button class="show">Open</button>
+
+<!-- div.overlay>div>p{Some content to show n hide}+button.hide{close} -->
+<div class="overlay">
+	<div>
+		<p>Some content to show n hide</p>
+		<button class="hide">close</button>
+	</div>
+</div>
+<script>
+
+//All browsers except <IE8
+document.addEventListener('DOMContentLoaded', function(){
+	var open = document.querySelector('.show'),
+		close = document.querySelector('.hide'),
+		modal = document.querySelector('.overlay')
+
+		modal.classList.add('accessibly-hidden');
+
+		close.addEventListener('click', function(){
+			modal.classList.add('accessibly-hidden');
+		});
+
+		open.addEventListener('click', function(){
+			modal.classList.remove('accessibly-hidden');
+		});
+});
+
+</script>
+	
+</body>
+</html>

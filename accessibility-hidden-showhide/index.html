@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accessibility Hidden</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li class="show"><a href="#">Content</a></li>
+		</ul>
+	</nav>
+	<div class="enquiries">
+		<p>Aelia<br> 3 City Rd<br>Auckland<br>NZ<br></p>
+	</div>
+	<script>
+	
+	//Toggle button that shows n hides content
+
+	var button=document.querySelector('.show'), 
+		text=document.querySelector('.enquiries');
+
+	visible=false;
+	text.classList.add("accessibility-hidden");
+
+	button.addEventListener("click", function(){
+		if (visible) {
+			text.classList.add("accessibility-hidden");
+		} else {
+			text.classList.remove("accessibility-hidden");
+		}
+		visible=!visible;
+	})
+	</script>
+	
+</body>
+</html>
